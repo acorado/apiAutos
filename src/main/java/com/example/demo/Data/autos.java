@@ -7,14 +7,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.NamedNativeQuery;
+
 
 @Entity // This tells Hibernate to make a table out of this class
 
 
-@NamedNativeQuery(name="adm_cursos.findByMunicipio",
-query="SELECT * FROM zonas where municipio = ? ",
-resultClass = autos.class)
 
 
 public class autos {
